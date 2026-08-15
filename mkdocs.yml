@@ -2,7 +2,7 @@ site_name: Fab Futures
 site_description: RTL-to-GDS chip design with open-source EDA tools. By Adiabatic Machines.
 site_author: Adiabatic Machines
 copyright: "&copy; 2026 Adiabatic Machines"
-repo_url: https://github.com/AlexWynn-AM/fab-futures
+repo_url: https://github.com/Adiabatic-Machines/fab-futures
 
 theme:
   name: material

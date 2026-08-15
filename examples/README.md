@@ -2,7 +2,9 @@
 
 > **New here?** Start with [QUICKSTART.md](QUICKSTART.md) for step-by-step instructions.
 
-These examples are **starting points**, not finished assignments.
+These examples are **starting points**, not finished assignments. Begin by
+running them unchanged so you have a known-good baseline. Then make one change
+at a time and rerun the relevant testbench.
 
 Your goal is to make something you'd actually want to demo. Use these as
 reference implementations, then make them your own:
@@ -13,7 +15,9 @@ reference implementations, then make them your own:
 
 Each project fits the same constraints (~200-500 gates, 50 MHz clock, a handful
 of I/O pins) and uses the same RTL-to-GDS flow. The "Customize it" sections
-below are the *minimum* expectation—the best projects go further.
+below are prompts, not a contest. A smaller design with a clear test and an
+honest explanation is more useful than an ambitious design that cannot be
+reproduced.
 
 ---
 
@@ -183,7 +187,7 @@ examples/lib/
 
 ## Running a Testbench
 
-**Easy way (recommended):**
+**Course path:**
 
 ```bash
 cd /foss/examples
@@ -214,8 +218,8 @@ gtkwave fortune_teller_tb.vcd
 
 Once your testbench works:
 
-1. **Lint it** - `verilator --lint-only -I../lib your_design.v`
-2. **Synthesize it** - Run through Yosys, check gate count
-3. **Place & route** - LibreLane flow, check timing
-4. **View layout** - Open GDS in KLayout, find your logic
-5. **Tape out** - Your design is ready for fabrication!
+1. **Lint it** — from `/foss/examples`, run the matching `make lint-*` target and resolve or explain every warning.
+2. **Synthesize it** — run the matching `make synth-*` target and inspect the reported hierarchy and cell count.
+3. **Place and route it** — inside the EDA container with `PDK_ROOT` set, run the matching `make pnr-*` target and review timing.
+4. **Inspect the layout** — open the generated GDS in KLayout and confirm you can identify the design boundary and major structures.
+5. **Assess submission readiness** — choose a shuttle, then work through its current harness and signoff checklist. Course completion alone does not make the design fabrication-ready.

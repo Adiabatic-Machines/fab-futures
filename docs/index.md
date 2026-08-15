@@ -1,6 +1,8 @@
 # Fab Futures
 
-Welcome to the Fab Futures chip design course materials.
+These materials guide you from a working Verilog example to verified layout
+artifacts. Start with the introduction if chip design is new to you; use the
+later lectures as references while you build and debug your project.
 
 ## Lectures
 
@@ -14,11 +16,17 @@ Welcome to the Fab Futures chip design course materials.
 
 ## Getting Started
 
-To run the notebooks locally, clone the repository and install the dependencies:
+To serve the same rendered course locally, clone the repository and install the
+documentation dependencies:
 
 ```bash
-git clone https://github.com/AlexWynn-AM/fab-futures.git
+git clone https://github.com/Adiabatic-Machines/fab-futures.git
 cd fab-futures
-pip install -r requirements.txt
-jupyter lab
+python -m pip install -r requirements-docs.txt
+python -m mkdocs serve
 ```
+
+Open the URL printed by MkDocs, normally `http://127.0.0.1:8000`. This command
+renders the notebooks but does not execute their code cells. For the Docker EDA
+environment and the first verified simulation, follow the
+[repository quick start](https://github.com/Adiabatic-Machines/fab-futures#quick-start).

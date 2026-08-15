@@ -14,7 +14,12 @@
 
 ## Course Project: Build Something You Want to Demo
 
-You're going to design and simulate a chip—something you'd actually want to show people. Your final design will be tapeout-ready, and you can submit it to a shuttle (like Tiny Tapeout or Efabless) on your own after the course if you want real silicon.
+You will design and simulate a small digital circuit that is clear enough to
+explain and interesting enough to demo. By the end of the course, you should
+have reproducible RTL, a self-checking simulation, and RTL-to-GDS practice
+artifacts. A shuttle submission is a separate step: the design must still meet
+the selected program's harness, PDK, signoff, documentation, and deadline
+requirements.
 
 Pick a project:
 
@@ -43,8 +48,19 @@ All projects use the same RTL-to-GDS flow. The difference is what your chip *doe
 **What you build:**
 - Customize an example *or* design your own
 - Write/modify ~30-100 lines of Verilog
-- Take it through the full flow: simulate → lint → synthesize → P&R → GDS
+- Take it through the available course flow: simulate → lint → synthesize → P&R → GDS
 - Demo your chip at the end of week 4
+
+**Definition of done for the course:**
+
+- The self-checking testbench passes from a clean checkout.
+- Lint warnings are either fixed or explained.
+- Synthesis and physical-design reports are saved and reviewed when the EDA
+  container and PDK are available.
+- The demo includes the design intent, I/O, a representative waveform, and the
+  current limitations.
+- Any future fabrication plan names the target shuttle and its remaining
+  signoff work; a generated GDS file alone is not a submission approval.
 
 ---
 
@@ -171,7 +187,7 @@ All projects use the same RTL-to-GDS flow. The difference is what your chip *doe
 - Design-for-debug and silicon debug techniques
 
 **Project homework:**
-- Run DRC/LVS on final design - fix any errors
+- Run the available DRC/LVS checks on the final course layout; fix or document every error
 - Document: what your chip does, pin assignments, how to test it
 - Create test plan: how will you verify it works on real hardware?
 - Prepare presentation/demo for Thursday
