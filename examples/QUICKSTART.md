@@ -8,15 +8,20 @@ New to chip design? Start here.
 
 You have two options:
 
-### Option A: Hosted Environment (Easiest)
+### Option A: Instructor-Provided Environment
 1. Open the link your instructor shared with you
 2. Log in with your credentials
-3. You'll see a Linux desktop in your browser — skip to Step 1 below!
+3. When the Linux desktop appears, continue to Step 1 below
 
 ### Option B: Run Locally
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. Run `./run-iic-osic-tools.sh` from the course folder
-3. Open [localhost:8080](http://localhost:8080) in your browser (password: `abc123`)
+3. Open [localhost:8080](http://localhost:8080) in your browser
+
+The upstream image uses `abc123` as its local VNC default. Do not expose or
+forward port 8080, and do not reuse that credential anywhere else. Before a
+shared or remote deployment, follow the upstream environment's authentication
+guidance and replace the default.
 
 ---
 
@@ -65,7 +70,9 @@ Yes definitely!
 Test complete
 ```
 
-The simulation ran! It pressed the virtual button twice and got two different fortunes.
+The final `Test complete` line is the important checkpoint: the compile and
+self-checking testbench both finished. If it is missing, stop here and use the
+[troubleshooting guide](TROUBLESHOOTING.md) before modifying the design.
 
 ---
 
@@ -171,12 +178,13 @@ fortune_teller/
 
 ---
 
-## Stuck?
+## If a Step Fails
 
-1. **Read the error message** - it usually says what's wrong
-2. **Check TROUBLESHOOTING.md** - common problems and fixes
-3. **Look at the notebooks** - they explain concepts step by step
-4. **Ask for help** - bring the error message with you
+1. Copy the exact command and the first error message.
+2. Check [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for that symptom.
+3. Confirm that you are in the directory shown in the step.
+4. If the problem remains, ask for help and include the command, error, and the
+   last step that worked.
 
 ---
 
@@ -188,6 +196,4 @@ Once you're comfortable running simulations:
 2. **Read the notebooks** - understand how the code works
 3. **Design your own** - pick a project that excites you
 4. **Synthesize it** - turn your Verilog into actual gates
-5. **Tape out** - submit your design for fabrication!
-
-Happy hacking!
+5. **Check a target shuttle** — compare your artifacts with its current harness and signoff requirements before treating the design as submission-ready.

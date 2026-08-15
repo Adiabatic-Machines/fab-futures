@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Fab Futures course voice and fact pass overview</title>
+  <desc id="desc">One-page review overview showing scope, red-tier fixes, and validation status.</desc>
+  <rect width="1600" height="900" fill="#f6f7fb"/>
+  <rect x="0" y="0" width="1600" height="18" fill="#4d65ff"/>
+  <circle cx="1420" cy="116" r="150" fill="#e7eaff"/>
+  <circle cx="1490" cy="78" r="70" fill="#4d65ff" opacity="0.18"/>
+
+  <text x="92" y="102" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700" fill="#4d65ff" letter-spacing="2">ADIABATIC MACHINES · REVIEW 0752</text>
+  <text x="92" y="178" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="760" fill="#171a2b">Fab Futures course</text>
+  <text x="92" y="244" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="760" fill="#171a2b">voice + fact pass</text>
+  <text x="94" y="298" font-family="Inter, Arial, sans-serif" font-size="28" fill="#4d5266">A safer, clearer path from first run to evidence-backed course artifacts.</text>
+
+  <rect x="92" y="352" width="430" height="170" rx="22" fill="#ffffff" stroke="#dfe2ee"/>
+  <text x="124" y="397" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#4d5266">COVERAGE</text>
+  <text x="124" y="458" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="760" fill="#171a2b">7 / 7</text>
+  <text x="296" y="458" font-family="Inter, Arial, sans-serif" font-size="26" fill="#4d5266">lecture notebooks</text>
+  <text x="124" y="495" font-family="Inter, Arial, sans-serif" font-size="18" fill="#4d5266">entry docs · examples · troubleshooting</text>
+
+  <rect x="548" y="352" width="430" height="170" rx="22" fill="#ffffff" stroke="#dfe2ee"/>
+  <text x="580" y="397" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#4d5266">RED-TIER CLOSURES</text>
+  <text x="580" y="458" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="760" fill="#171a2b">5</text>
+  <text x="630" y="458" font-family="Inter, Arial, sans-serif" font-size="25" fill="#4d5266">learner blockers corrected</text>
+  <text x="580" y="490" font-family="Inter, Arial, sans-serif" font-size="18" fill="#4d5266">URL · credential · install · paths</text>
+  <text x="580" y="514" font-family="Inter, Arial, sans-serif" font-size="18" fill="#4d5266">course / shuttle boundary</text>
+
+  <rect x="1004" y="352" width="504" height="170" rx="22" fill="#17203b"/>
+  <text x="1036" y="397" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#9fafff">EXECUTABLE INTEGRITY</text>
+  <text x="1036" y="458" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="760" fill="#ffffff">Exact match</text>
+  <text x="1036" y="495" font-family="Inter, Arial, sans-serif" font-size="22" fill="#d8ddf5">all notebook code cells + stored outputs</text>
+
+  <text x="92" y="594" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#171a2b">What changed</text>
+  <text x="92" y="642" font-family="Inter, Arial, sans-serif" font-size="25" fill="#34394d">01  Known-good baseline before modification</text>
+  <text x="92" y="683" font-family="Inter, Arial, sans-serif" font-size="25" fill="#34394d">02  Prerequisites, expected observations, and stop conditions</text>
+  <text x="92" y="724" font-family="Inter, Arial, sans-serif" font-size="25" fill="#34394d">03  Course GDS separated from shuttle acceptance and silicon</text>
+
+  <text x="855" y="594" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#171a2b">Validation</text>
+  <text x="855" y="642" font-family="Inter, Arial, sans-serif" font-size="25" fill="#34394d">✓ MkDocs strict build</text>
+  <text x="855" y="683" font-family="Inter, Arial, sans-serif" font-size="25" fill="#34394d">✓ 4 simulations + 4 syntheses</text>
+  <text x="855" y="724" font-family="Inter, Arial, sans-serif" font-size="25" fill="#34394d">✓ external links audited</text>
+
+  <rect x="92" y="790" width="1416" height="2" fill="#d9dce8"/>
+  <text x="92" y="836" font-family="Inter, Arial, sans-serif" font-size="22" fill="#4d5266">Review target: 25 minutes · human-in-loop · branch 0752.1-fab-course-voice</text>
+  <text x="1508" y="836" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#4d65ff">2026-08-15</text>
+</svg>

@@ -1,6 +1,10 @@
 # Fab Futures: Microelectronics
 
-A 4-week hands-on course where you design and simulate your own chip—ready for tapeout.
+A four-week, hands-on introduction to the RTL-to-GDS flow. You will modify a
+working design, verify it in simulation, and produce layout artifacts with
+open-source tools. A completed course project is a strong starting point for a
+shuttle submission; it is not automatically fabrication-ready until it meets
+that shuttle's harness, signoff, and submission requirements.
 
 ## What You'll Build
 
@@ -45,7 +49,10 @@ fab-futures/
 
 ### 3. Open in Browser
 
-Go to [http://localhost:8080](http://localhost:8080) (password: `abc123`)
+Open [http://localhost:8080](http://localhost:8080). The upstream image uses
+`abc123` as its local VNC default. Treat that credential as suitable only for a
+loopback-only classroom session: do not expose or forward port 8080. Configure
+proper authentication before using the environment on a shared or remote host.
 
 You'll get a full Linux desktop with all the EDA tools pre-installed:
 - **Xschem** — schematic capture
@@ -58,15 +65,16 @@ You'll get a full Linux desktop with all the EDA tools pre-installed:
 
 ### 4. Run Your First Simulation
 
-Inside the container:
+Inside the container, run the checked-in example target:
 
 ```bash
-cd /foss/designs
-cp -r /path/to/examples/fortune_teller .
-cd fortune_teller
-iverilog -o sim.vvp -I../lib fortune_teller.v fortune_teller_tb.v ../lib/*.v
-vvp sim.vvp
+cd /foss/examples
+make sim-fortune
 ```
+
+The run is successful when the output ends with `Test complete`. To make a
+copy you can edit without changing the examples, continue with the
+[step-by-step quick start](examples/QUICKSTART.md#step-7-make-it-yours).
 
 ## Course Overview
 
@@ -86,7 +94,9 @@ Each example includes:
 - Working testbench with simulation instructions
 - Concepts explained inline (state machines, timing, protocols)
 
-See [`examples/README.md`](examples/README.md) for project details and customization ideas.
+See [`examples/README.md`](examples/README.md) for project details,
+customization ideas, and the distinction between a successful course flow and
+a shuttle-approved submission.
 
 ## Tools & PDKs
 

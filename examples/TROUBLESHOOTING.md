@@ -1,6 +1,8 @@
 # Troubleshooting Guide
 
-Common issues and solutions for Fab Futures projects.
+Start with the symptom you can observe and change one thing at a time. Preserve
+the full error message: the first failure is usually more useful than the errors
+that follow it.
 
 ---
 
@@ -201,6 +203,10 @@ end
 
 ### Chip draws no current
 
+Set a conservative current limit before powering an unproven board. If the
+reading is unexpected, switch the supply off before inspecting connections or
+moving probes.
+
 **Check**:
 1. VDD and GND connected correctly?
 2. Correct voltage (1.8V for core, 3.3V for I/O)?
@@ -211,9 +217,12 @@ end
 
 ### Chip draws too much current
 
+**Stop condition:** switch the supply off immediately. Do not continue probing
+an unexpectedly hot or over-current board under power.
+
 **Cause 1**: Short circuit
 
-**Check**: Inspect for solder bridges, especially on QFN pads.
+**Check with power removed**: Inspect for solder bridges, especially on QFN pads.
 
 **Cause 2**: Oscillation
 
@@ -221,7 +230,8 @@ end
 
 **Cause 3**: Wrong voltage
 
-**Check**: Don't apply 3.3V to 1.8V core!
+**Check before reapplying power**: Confirm the rail and current limit. Do not
+apply 3.3V to a 1.8V core supply.
 
 ---
 

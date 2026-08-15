@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Run IIC-OSIC-TOOLS VNC desktop for Fab Futures.
 # Usage: ./run-iic-osic-tools.sh
-# Then open http://localhost:8080 in your browser (default VNC password: abc123).
+# Then open http://localhost:8080 in your browser. The upstream local-only VNC
+# default is abc123; do not expose or forward this service without replacing it.
 #
 # Ensure Docker Desktop is running before executing.
 
@@ -23,7 +24,8 @@ echo "[INFO] Examples directory: $EXAMPLES"
 echo "       -> mounted at /foss/examples inside container"
 echo ""
 echo "[INFO] Web UI will be at http://localhost:$WEBSERVER_PORT"
-echo "       Default VNC password: abc123"
+echo "       Local-only upstream VNC default: abc123"
+echo "       Do not expose/forward this port; configure authentication for remote use."
 echo ""
 echo "Quick start once inside the container:"
 echo "  cd /foss/examples"
