@@ -1,3 +1,7 @@
+# ci-catches: not a test lane; it is the GitHub Pages deploy of the site, and a
+# red run is how a docs build that breaks on a clean runner (an unpinned
+# mkdocs, mkdocs-material or mkdocs-jupyter release) first shows up.
+
 name: Deploy MkDocs to GitHub Pages
 
 on:
@@ -17,6 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -42,6 +47,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     needs: build
     steps:
       - name: Deploy to GitHub Pages
